@@ -29,9 +29,11 @@ class ApplicationModule {
 
     @Provides
     fun provideBaseUrl() = BuildConfig.BASE_URL
+
     @Provides
     @Singleton
     fun provideApplication() = DMartApplication()
+
     @Provides
     fun provideGson(): Gson = GsonBuilder().create()
 
